@@ -1,0 +1,92 @@
+@import 'base/_grid'
+
+color-primary = #2980b9
+
+*
+  box-sizing: border-box
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+
+body
+  background: #eee
+  font-family: 'Arial', helvetica, sans-serif
+  padding: 0
+  margin: 0
+
+.container
+  max-width: 960px
+  margin: 0 auto
+  padding: 1em 0
+
+.box-generate
+  row(12)
+
+.control-form, .result
+  padding: 1em
+
+.control-form
+  column(4)
+
+.result
+  column(8)
+
+.generated
+  padding-top: .7em
+
+h1
+  font-size: 5em
+  font-family: 'Montserrat Subrayada', sans-serif
+  color: color-primary
+  text-shadow: 2px 0 0 darken(color-primary, 30%)
+  text-align: center
+  margin: .8em 0
+
+h2
+  font-size: 1.4em
+  color: darken(color-primary, 30%)
+  margin: .2em 0
+
+p
+  color: #555
+  line-height: 1.6em
+  font-size: .9em
+  margin: 1em 0
+
+.warning
+  color: #c0392b
+
+label
+  display: block
+  font-size: .9em
+  color: #888
+  margin-bottom: .4em
+  margin-top: 1em
+
+input[type="text"]
+  background: #fff
+  border: 1px solid #ddd
+  border-radius: 3px
+  padding: .5em
+  outline: none
+  width: 90%
+  &:focus
+    border-color: #999
+
+.btn-send
+  background: #27ae60
+  padding: .4em 1em
+  color: white
+  font-size: 1em
+  font-weight: bold
+  border: none
+  margin: 1em 0
+  cursor: pointer
+  &:hover
+    background: lighten(#27ae60, 10%)
+
+.load-example
+  color: color-primary
+  font-size: .8em
+  text-decoration: none
+  border-bottom: 1px solid #ccc
+  margin-left: 5.1em

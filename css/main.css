@@ -1,0 +1,119 @@
+body {
+  width: 100%;
+}
+body *zoom:1:before,
+body *zoom:1:after {
+  content: "";
+  display: table;
+}
+body *zoom:1:after {
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  background: #eee;
+  font-family: 'Arial', helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+.box-generate {
+  display: block;
+  width: 102.08333333333333%;
+  margin: 0 -1.0416666666666665%;
+  *width: 102.08333333333333% -correction;
+  *margin: 0 -1.0416666666666665% -correction;
+}
+.control-form,
+.result {
+  padding: 1em;
+}
+.control-form {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 31.25%;
+  margin: 0 1.0416666666666665%;
+  *width: 31.25% -correction;
+  *margin: 0 1.0416666666666665% -correction;
+}
+.result {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 64.58333333333334%;
+  margin: 0 1.0416666666666665%;
+  *width: 64.58333333333334% -correction;
+  *margin: 0 1.0416666666666665% -correction;
+}
+.generated {
+  padding-top: 0.7em;
+}
+h1 {
+  font-size: 5em;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  color: #2980b9;
+  text-shadow: 2px 0 0 #1d5a82;
+  text-align: center;
+  margin: 0.8em 0;
+}
+h2 {
+  font-size: 1.4em;
+  color: #1d5a82;
+  margin: 0.2em 0;
+}
+p {
+  color: #555;
+  line-height: 1.6em;
+  font-size: 0.9em;
+  margin: 1em 0;
+}
+.warning {
+  color: #c0392b;
+}
+label {
+  display: block;
+  font-size: 0.9em;
+  color: #888;
+  margin-bottom: 0.4em;
+  margin-top: 1em;
+}
+input[type="text"] {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 0.5em;
+  outline: none;
+  width: 90%;
+}
+input[type="text"]:focus {
+  border-color: #999;
+}
+.btn-send {
+  background: #27ae60;
+  padding: 0.4em 1em;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  margin: 1em 0;
+  cursor: pointer;
+}
+.btn-send:hover {
+  background: #2cc66d;
+}
+.load-example {
+  color: #2980b9;
+  font-size: 0.8em;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  margin-left: 5.1em;
+}

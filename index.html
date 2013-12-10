@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <title>Lorem Curso</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- CSS -->
+        <link href='//fonts.googleapis.com/css?family=Montserrat+Subrayada:700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>Lorem curso / Gerando apresentações de curso</h1>
+            
+            <div class="box-generate">
+                <div class="control-form">
+                    <h2>Campos Mágicos</h2>
+                    <form id="form-curso">
+                        
+                        <label for="ipt-curso">Curso</label>
+                        <input id="ipt-curso" type="text" />
+
+                        <label for="ipt-area">Área/Ramo</label>
+                        <input id="ipt-area" type="text" />
+
+                        <label for="ipt-universidade">Universidade</label>
+                        <input id="ipt-universidade" type="text" />
+
+                        <input type="submit" value="Gerar" class="btn-send" />
+
+                        <a href="#" class="load-example">Carregar exemplo</a>
+
+                    </form>
+                </div>
+                <div class="result">
+                    <h2>Sua apresentação de curso</h2>
+                    <div class="generated"><p class="warning">Por favor, preencha os campos ao lado</p></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- jQuery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+
+            // Load example
+            $('.load-example').on('click', function() {
+                $('#ipt-curso').val('Sistemas de Informação');
+                $('#ipt-area').val('Tecnologia da Informação');
+                $('#ipt-universidade').val('Unisul');
+            });
+
+
+            // Form submit
+            $('#form-curso').submit(function( event ) {
+                event.preventDefault();
+
+                var valueCurso         = $('#ipt-curso').val(),
+                    valueArea          = $('#ipt-area').val(),
+                    valueUniversidade  = $('#ipt-universidade').val();
+
+                var p1 = 'Para atender as novas demandas do mercado, o curso de <strong>'+valueCurso+'</strong> da <strong>'+valueUniversidade+'</strong> visa formar profissionais capazes de desempenhar as atividades com base em conhecimento científico, tecnológico e de engenharia.',
+
+                    p2 = 'A área de <strong>'+valueArea+'</strong> é muito importante para o crescimento econômico de uma região, refletindo diretamente no nível de empregos ofertados e no desenvolvimento social geral.',
+
+                    p3 = 'O mercado está precisando de mão de obra qualificada no setor de <strong>'+valueArea+'</strong>, pois com a constante mudança tecnológica, o profissional que se especializar estará em alta.',
+
+                    p4 = 'O currículo foi desenvolvido com base nas melhores práticas pedagógicas e diretrizes institucionais a fim de garantir uma formação profissional com eficiência e eficácia, atendendo às exigências do mercado.',
+
+                    p5 = 'A dinâmica das interações sociais e as mudanças nos padrões organizacionais tornam imprescindível a formação de profissionais que se adaptem às transformações do mercado e saibam lidar com a competitividade.';
+
+                var resultado = '<p>'+p1+'</p><p>'+p3+'</p><p>'+p2+'</p><p>'+p5+'</p>';
+
+                $('.generated').html(resultado);
+            });
+
+        </script>
+    </body>
+</html>
