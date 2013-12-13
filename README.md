@@ -19,5 +19,3 @@ Gere apresentações para cursos burocratas.
 
 [Diogo Moretti](https://github.com/diogomoretti)
 [Juliano Toazza](https://github.com/toazza)
- 
-
