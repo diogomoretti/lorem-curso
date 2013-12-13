@@ -18,4 +18,5 @@ Gere apresentações para cursos burocratas.
 ## Créditos
 
 [Diogo Moretti](https://github.com/diogomoretti)
+
 [Juliano Toazza](https://github.com/toazza)
